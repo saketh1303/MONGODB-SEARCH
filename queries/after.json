@@ -1,0 +1,35 @@
+
+{
+  "ticket_listing_query_after_index": {
+    "executionStats": {
+      "executionSuccess": true,
+      "nReturned": 20,
+      "executionTimeMillis": 31,
+      "totalKeysExamined": 20,
+      "totalDocsExamined": 20,
+      "stage": "IXSCAN",
+      "indexUsed": "tenantId_1_status_1_createdAt_-1",
+      "details": {
+        "collectionScan": false,
+        "inMemorySort": false,
+        "indexScan": true,
+        "limitAppliedAtIndex": true
+      }
+    }
+  },
+  "regex_search_query_after_index": {
+    "executionStats": {
+      "executionSuccess": true,
+      "nReturned": 22500,
+      "executionTimeMillis": 80,
+      "totalKeysExamined": 0,
+      "totalDocsExamined": 100000,
+      "stage": "COLLSCAN",
+      "details": {
+        "regexSearch": true,
+        "indexUsed": false,
+        "reason": "Regex queries cannot use standard B-Tree indexes"
+      }
+    }
+  }
+}
