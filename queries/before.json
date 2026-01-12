@@ -1,0 +1,33 @@
+{
+  "ticket_listing_query_before_index": {
+    "executionStats": {
+      "executionSuccess": true,
+      "nReturned": 20,
+      "executionTimeMillis": 73,
+      "totalKeysExamined": 0,
+      "totalDocsExamined": 100000,
+      "stage": "COLLSCAN + SORT",
+      "details": {
+        "collectionScan": true,
+        "inMemorySort": true,
+        "sortField": "createdAt",
+        "limit": 20
+      }
+    }
+  },
+  "regex_search_query_before_index": {
+    "executionStats": {
+      "executionSuccess": true,
+      "nReturned": 22500,
+      "executionTimeMillis": 87,
+      "totalKeysExamined": 0,
+      "totalDocsExamined": 100000,
+      "stage": "COLLSCAN",
+      "details": {
+        "regexSearch": true,
+        "field": "description",
+        "caseInsensitive": true
+      }
+    }
+  }
+}
